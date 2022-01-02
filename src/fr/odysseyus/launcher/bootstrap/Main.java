@@ -44,14 +44,17 @@ public class Main {
     }
 
     public static void displaySplash() {
-        splash = new SplashScreen("Odysseyus", Swinger.getResource("vide.png"));
+        splash = new SplashScreen("Odysseyus", Swinger.getResource("background.png"));
         splash.setIconImage(Swinger.getResource("icon.png"));
         splash.setTransparent();
         splash.setLayout(null);
         Animator.fadeInFrame(splash, Animator.FAST);
 
-        bar = new SColoredBar(Swinger.getTransparentWhite(100), Swinger.getTransparentWhite(75));
-        bar.setBounds(118, 120, 124, 5);
+        bar = new SColoredBar(Swinger.getTransparentWhite(120), Swinger.getTransparentWhite(75));
+        bar.setBounds(10, 340, 235, 10);
+                     //X    Y
+
+
         splash.add(bar);
 
         splash.setVisible(true);
